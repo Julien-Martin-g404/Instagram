@@ -11,7 +11,7 @@ $stmt->execute(array(
   ':id_u' => $_GET['id_u'],
 ));
 if ($stmt->rowCount() > 0) {
-  header("Location: fyp.php?error=Vous avez déjà liké la photo");
+  header("Location: ../fyp.php?error=Vous avez déjà liké la photo");
 } else {
 
 
@@ -36,6 +36,6 @@ if ($stmt->rowCount() > 0) {
 
   // Afficher le nombre de likes pour chaque photo
   foreach ($likes as $like) {
-    header("Location: fyp.php?Likes={$like['Likes']}");
+    header("Location: ../fyp.php?Likes={$like['Likes']}");
   }
 }

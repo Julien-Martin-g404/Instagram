@@ -38,4 +38,4 @@ try {
     die('Erreur:' . $e->getMessage());
 }
 
-header('location: profil-prive.php');
+header('location: ../profil-prive.php');

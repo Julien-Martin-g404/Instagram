@@ -21,11 +21,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../Utils/style.css">
+        <link rel="stylesheet" href="Utils/style.css">
         <title>Se connecter</title>
     </head>
 
-    <body style="background-image:url(Images/fond-instagram.jpg); background-repeat: no-repeat; ">
+    <body style="background-image:url(Images/fond-instagram.jpg); background-repeat: no-repeat; background-size: cover; ">
 
         <div>
             <img class="icone" src="Images/Instagram_icon.png.webp">

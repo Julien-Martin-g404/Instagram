@@ -24,7 +24,7 @@ $sql = "SELECT * FROM users WHERE pseudo='$pseudo' AND id_u!='$id'";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
-    header("Location: profil-prive.php?error=pseudo_exists");
+    header("Location: ../profil-prive.php?error=pseudo_exists");
     exit();
 }
 
@@ -32,7 +32,7 @@ if (mysqli_num_rows($result) > 0) {
 $sql = "UPDATE users SET nom='$nom', prenom='$prenom', pseudo='$pseudo', password='$password' WHERE id_u='$id'";
 
 if (mysqli_query($conn, $sql)) {
-    header("Location: profil-prive.php?sucess=updated");
+    header("Location: ../profil-prive.php?sucess=updated");
     exit();
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
